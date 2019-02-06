@@ -2,7 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './view/App';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter} from "react-router-dom";
+import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+
+, 
+document.getElementById('root'));
 
 serviceWorker.unregister();

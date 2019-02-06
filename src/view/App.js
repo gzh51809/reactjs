@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import Header from "./Header";
+import React, {Component} from 'react';
+import RounterIndex from "../router/router";
 
 class App extends Component {
   render() {
     return (
       <div>
-    
-      <h1>好了，开始项目了</h1>
+      <main className="main">
+                    <RounterIndex />
+               </main>
       </div>
     );
   }
