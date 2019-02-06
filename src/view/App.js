@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Header from "./Header";
 
 class App extends Component {
   render() {
     return (
-      <h1>这个是我刚刚改写的</h1>
+      <div>
+    
+      <h1>好了，开始项目了</h1>
+      </div>
     );
   }
 }
