@@ -2,6 +2,8 @@ import React,{Component} from "react";
 import {NavLink} from "react-router-dom";
 import RouterList from "../../router/index";
 import {Row,Col} from "antd";
+import "./indexx.css";
+
 const subMenu = [
     {
         item: "全部",
@@ -34,17 +36,20 @@ export default class Index extends Component{
         return (
             <Row className="mainWrap">
             <Col md={6} xs={24} className="sider">
-            <ul >
-                <li className="conlist">
+            
+                <nav className="conlist">
+                <div className="div">
                 {subMenu.map((item,index)=>{
                             return <NavLink to={item.path} 
                             key={index}>
                             {item.item}
                             </NavLink>
                         })}
-                </li>
+
+                </div>
+                </nav>
                
-            </ul>
+            
             
             </Col>
             <RouterList />

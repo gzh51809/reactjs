@@ -18,15 +18,15 @@
 .menu a{
     display:inline-block;
     width:100px;
-    height:100px;
+    height:97px;
     line-height:100px;
     text-align: center;
     text-decoration:none;
-    color:black;
+    color:white;
 }
 h1{
-    height:56px;
-    line-height: 48px;
+    height:100px;
+    line-height: 100px;
     width:28%;
     text-align: center;
 }
@@ -51,23 +51,36 @@ h1{
 .conlist a{
     display:block;
     text-decoration:none;
-    width:28%;
+    width:98%;
     height:38px;
     font-size: 16px;
     text-align:center;
     line-height:38px;
+    margin-top:12px;
 }
 
 .sider{
     display:block;
-    width:28%;
+    width:31%;
     height:100%;
     border-right:1px solid red;
     float:left;
 }
 .indexList{
-    width:70%;
+    width:68%;
     height:100%;
     border:1px solid blue;
     float:left;
 }
+
+/* 这部分是base */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,button { border:0 none; padding:0;margin:0;outline-style:none; } /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+textarea { resize:none; } 
+img {border:0; vertical-align:middle; }
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+html,body{ height: 100%; }
+

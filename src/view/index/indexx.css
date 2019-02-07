@@ -1,0 +1,14 @@
+.menu .active{
+    color:red;
+    border-bottom:3px solid pink;
+}
+.conlist .active{
+    color:red;
+    background:#58bc58;
+    border-right:6px solid pink;
+}
+.conlist a:hover{
+    background:green;
+    border-right:6px solid pink;
+
+}
