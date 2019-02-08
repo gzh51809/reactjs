@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import axios from "axios";
 import {connect} from "react-redux";
 import { Avatar, Row, Col} from "antd";
+import Userlist from "./userlist";
  class User extends Component{
 
     constructor(arg){
@@ -66,7 +67,7 @@ import { Avatar, Row, Col} from "antd";
         })
     }
     render(){
-        let {loginname,avatar,score,create_at} = this.state;
+        let {loginname,avatar,score,create_at,recent_replies,loading,recent_topics} = this.state;
         
         return (<div >
             <div className="touxiang">
@@ -98,6 +99,16 @@ import { Avatar, Row, Col} from "antd";
              </Col>
          </Row>
          </div>
+         <Userlist
+                loading = {loading}
+                title = "最近创建的话题"
+                data = {recent_topics}
+            />
+            <Userlist
+                loading = {loading}
+                title = "最近回复的话题"
+                data = {recent_replies}
+            />
      </div>
             
         );

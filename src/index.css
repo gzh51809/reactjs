@@ -272,3 +272,47 @@ html,body{ height: 100%; }
 .touxiang p:nth-child(2){
     margin-left:12px;
 }
+/* 用户list */
+
+.listlist img{
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    margin-left:18px;
+}
+
+.listlist{
+    float:left;
+    font-size: 14px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height:78px;
+}
+.listlistss{
+    float:left;
+    width:52%;
+    font-size: 14px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height:78px;
+}
+.listlists{
+    float:right;
+    font-size: 14px;
+    line-height: 38px;
+    margin-right:28px;
+    line-height:78px;
+}
+.ant-card-head-title{
+    font-weight: bold;
+}
+
+/* .userInfoLists .ant-list-item{
+    height:58px;
+    line-height:58px;
+} */
+
