@@ -1,8 +1,12 @@
 import React,{Component} from "react";
+import data from "./data";
+import Temlatea from "../templatea/templatea";
 export default class Book extends Component{
     render(){
         return (
-            <h2>book</h2>
+           <Temlatea 
+           data={data}
+           />
         );
     }
 }
