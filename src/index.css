@@ -240,3 +240,35 @@ html,body{ height: 100%; }
     width:30%;
     margin:6px;
 }
+
+/* 用户中心 */
+.userAvatar img{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    margin-top:8px;
+    margin-left:45%;
+}
+.userInfo div{
+    float:left;
+    font-size: 14px;
+    margin-right:8px;
+    width:32%;
+}
+.userInfo div span{
+    color:blue;
+}
+.touxiang{
+    height:166px;
+    border:1px solid #58bc58;
+    width:80%;
+    margin-left:10%;
+    margin-bottom: 8%;
+}
+.touxiang p{
+    text-align: center;
+    margin-top:12px;
+}
+.touxiang p:nth-child(2){
+    margin-left:12px;
+}

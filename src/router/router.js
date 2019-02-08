@@ -12,8 +12,8 @@ export default class RouterIndex extends Component {
             <Switch>
                 <Route path="/" exact render={()=>(<Redirect to="/index" />)}/>
                 <Route path="/index" component={Index}/>
-                <Route path="/details" component={Details}/>
-                <Route path="/user" component={User}/>
+                <Route path="/details/:id" component={Details}/>
+                <Route path="/user/:id" component={User}/>
                 <Route path="/book" component={Book}/>
                 <Route path="/about" component={About}/>
             </Switch>
