@@ -1,7 +1,6 @@
 import React,{Component} from "react";
-import Axios from "axios";
-import {connect} from "react-redux";
 import axios from "axios";
+import {connect} from "react-redux";
  class User extends Component{
 
     constructor(arg){
@@ -20,11 +19,12 @@ import axios from "axios";
                     type:"USER_SUCC",
                     data:res
                 });
-            }).catch(function(error){
-                    dispatch({
-                        type:"USER_ERROR",
-                        data:error
-                    });
+            })
+            .catch(function (error) {
+                dispatch({
+                    type:"USER_ERROR",
+                    data: error
+                });
             })
         })
     }
