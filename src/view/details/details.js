@@ -49,6 +49,14 @@ const tabSchema = {
             })
         })
     }
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            data: nextProps.data.data,
+            loading: nextProps.loading
+        })
+       
+
+    }
     render(){
         const {data,loading} = this.state;
         console.log(this.state);
