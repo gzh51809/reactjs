@@ -54,9 +54,14 @@ const tabSchema = {
             data: nextProps.data.data,
             loading: nextProps.loading
         })
+
+        if(this.props.location === nextProps.location){
+            window.scrollTo(0,0)
+        }
        
 
     }
+    
     render(){
         const {data,loading} = this.state;
         console.log(this.state);

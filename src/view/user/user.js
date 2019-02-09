@@ -44,6 +44,9 @@ import Userlist from "./userlist";
             recent_topics: data.data.recent_topics,
             recent_replies: data.data.recent_replies
         });
+        if(this.props.location === nextProps.location){
+            window.scrollTo(0,0)
+        }
     }
    
     updata(loginname){
