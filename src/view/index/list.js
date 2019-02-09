@@ -49,7 +49,7 @@ class IndexList extends Component{
             dispatch({ 
                 type: "LIST_UPDATA"
             });
-            axios.get('https://cnodejs.org/api/v1/topics?tab='+tab+'&limit=5&page='+page)
+            axios.get('https://cnodejs.org/api/v1/topics?tab='+tab+'&limit=25&page='+page)
                 .then(function(res){
                     dispatch({
                         type: "LIST_SUCC",

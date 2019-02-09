@@ -429,10 +429,10 @@ html,body{ height: 100%; }
 
  .lalala .ant-list-item {
     width: 100%;
-    height: 128px;
+    /* height: 128px; */
     border-bottom: 1px solid black;
     position: relative;
 }
-.detailshuifuc p img{
+.detailshuifuc img{
     width:8%;
 }
